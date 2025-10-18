@@ -1,0 +1,27 @@
+{{ define "main" }}
+  <h2>{{ if .Params.heading }} {{ .Params.heading }} {{ else }} {{ .Title }} {{ end }}</h2>
+
+  {{ if .Params.date }}
+    <div>
+      {{ .Date.Format ( .Site.Params.dateform ) }}
+    </div>
+  {{ end }}
+
+  <div>
+    {{ .Content }}
+  </div>
+{{ end }}
+
+{{ define "footer" }}
+
+  <footer>
+    {{ with .PrevInSection }}
+      <a class="pre" href="{{ .Permalink }}">上一篇: {{ .Title }}</a>
+    {{ end }}
+
+    {{ with .NextInSection }}
+      <a class="next" href="{{ .Permalink }}">下一篇: {{ .Title }}</a>
+    {{ end }}
+  </footer>
+
+{{ end }}

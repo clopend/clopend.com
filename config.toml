@@ -1,0 +1,15 @@
+baseurl = "https://blog.clopend.com/"
+title = "Clopend"
+author = "Clopend"
+canonifyurls = true
+languagecode = "zh-CN"
+defaultContentLanguage = 'zh'
+
+publishDir = "docs"
+
+[params]
+  sitename = "Clopend"
+  slogan = "Less is More"
+  github = "https://github.com/clopend"
+  since = "2021"
+  dateform = "2006-01-02"

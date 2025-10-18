@@ -1,0 +1,14 @@
+{{ define "main" }}
+    <ul>
+      {{ range .Site.RegularPages }}
+      <li>
+        <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+        <span>
+          {{if not .Date.IsZero }}
+          {{ .Date.Format (.Site.Params.dateform | default "2006-01-02") }}
+          {{end}}
+        </span>
+      </li>
+      {{ end }}
+    </ul>
+{{ end }}
