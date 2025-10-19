@@ -9,7 +9,7 @@ publishDir = "docs"
 
 [params]
   sitename = "Less is More"
-  slogan = ""
+  slogan = "free as in freedom"
   github = "https://github.com/clopend"
   since = "2021"
   dateform = "2006-01-02"
